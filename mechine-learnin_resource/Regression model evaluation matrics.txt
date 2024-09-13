@@ -1,0 +1,42 @@
+Sure! Let's break these down into simpler terms:
+
+### R² (R-squared) or Coefficient of Determination
+- **What it is**: R² measures how well your model's predictions match the actual data.
+- **Range**: It ranges from 0 to 1.
+  - **0** means the model does not explain any variability in the data.
+  - **1** means the model perfectly explains all the variability.
+- **Example**: If you have an R² of 0.8, it means 80% of the variation in the dependent variable (e.g., exam scores) is explained by the independent variable (e.g., hours studied) in your model¹¹.
+
+### Mean Absolute Error (MAE)
+- **What it is**: MAE measures the average magnitude of errors in a set of predictions, without considering their direction (positive or negative).
+- **How it's calculated**: Take the absolute difference between the predicted and actual values, sum them up, and then divide by the number of observations.
+- **Example**: If your model predicts house prices and the MAE is \$10,000, on average, your predictions are off by \$10,000¹.
+
+### Mean Squared Error (MSE)
+- **What it is**: MSE measures the average of the squares of the errors. It gives more weight to larger errors because the errors are squared.
+- **How it's calculated**: Take the difference between the predicted and actual values, square it, sum these squared differences, and then divide by the number of observations.
+- **Example**: If your model's MSE is 25, it means the average squared difference between the predicted and actual values is 25⁷.
+
+### Why Use These Metrics?
+- **R²** helps you understand how well your model fits the data.
+- **MAE** gives you a straightforward average error, which is easy to interpret.
+- **MSE** penalizes larger errors more, which can be useful if you want to avoid large mistakes.
+
+Feel free to ask if you need more details or examples!
+
+Source: Conversation with Copilot, 9/13/2024
+(1) Coefficient of Determination (R²) | Calculation & Interpretation - Scribbr. https://www.scribbr.com/statistics/coefficient-of-determination/.
+(2) Absolute Error & Mean Absolute Error (MAE) - Statistics How To. https://www.statisticshowto.com/absolute-error/.
+(3) Mean Squared Error (MSE) - Statistics by Jim. https://statisticsbyjim.com/regression/mean-squared-error-mse/.
+(4) Mean Absolute Error (MAE) - Vocab, Definition, and Must Know ... - Fiveable. https://library.fiveable.me/key-terms/modern-statistical-prediction-and-machine-learning/mean-absolute-error-mae.
+(5) Mean Absolute Error Calculator - Statology. https://www.statology.org/mean-absolute-error-calculator/.
+(6) How to Calculate Mean Absolute Error in R - Statology. https://www.statology.org/mean-absolute-error-in-r/.
+(7) 3 Regression Metrics You Must Know: MAE, MSE, and RMSE. https://proclusacademy.com/blog/explainer/regression-metrics-you-must-know/.
+(8) Mean squared error - Wikipedia. https://en.wikipedia.org/wiki/Mean_squared_error.
+(9) What is: Mean Squared Error (MSE) - LEARN STATISTICS EASILY. https://statisticseasily.com/glossario/what-is-mean-squared-error-mse/.
+(10) Mastering Mean Square Error In Data Science [Boost Your Model Accuracy .... https://enjoymachinelearning.com/blog/how-to-find-mean-square-error-in-data-science/.
+(11) Mean Squared Error | Definition, Formula ... - GeeksforGeeks. https://www.geeksforgeeks.org/mean-squared-error/.
+(12) Coefficient of Determination Calculator - Statology. https://www.statology.org/coefficient-of-determination-calculator/.
+(13) 2.5 - The Coefficient of Determination, r-squared | STAT 462. https://online.stat.psu.edu/stat462/node/95/.
+(14) 1.5 - The Coefficient of Determination, \(R^2\) - Statistics Online. https://online.stat.psu.edu/stat501/lesson/1/1.5.
+(15) 12.2.3: Coefficient of Determination - Statistics LibreTexts. https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Mostly_Harmless_Statistics_%28Webb%29/12%3A_Correlation_and_Regression/12.02%3A_Simple_Linear_Regression/12.2.03%3A_Coefficient_of_Determination.
