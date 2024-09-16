@@ -1,0 +1,2 @@
+1. UC Irvine Machine Learning Repository: https://archive.ics.uci.edu/
+2. Kaggle datasets: https://www.kaggle.com/datasets

@@ -1,0 +1,39 @@
+Feature Reduction and Addition Techniques
+
+### Feature Reduction Techniques
+
+1. **Feature Selection**:
+   - **Filter Methods**: These methods use statistical techniques to evaluate the importance of each feature. Examples include correlation coefficients and chi-square tests.
+   - **Wrapper Methods**: These methods evaluate feature subsets based on model performance. Techniques like recursive feature elimination (RFE) fall into this category.
+   - **Embedded Methods**: These methods perform feature selection during the model training process. Examples include Lasso (L1 regularization) and decision tree-based methods.
+
+2. **Dimensionality Reduction**:
+   - **Principal Component Analysis (PCA)**: Transforms the data into a lower-dimensional space while retaining most of the variance.
+   - **t-Distributed Stochastic Neighbor Embedding (t-SNE)**: Reduces dimensions while preserving the structure of the data, often used for visualization.
+   - **Linear Discriminant Analysis (LDA)**: Reduces dimensions by maximizing the separation between different classes.
+
+### Feature Addition Techniques
+
+1. **Feature Engineering**:
+   - **Polynomial Features**: Creating new features by combining existing features in polynomial terms.
+   - **Interaction Features**: Creating features that capture interactions between existing features.
+   - **Domain-Specific Features**: Adding features based on domain knowledge that might be relevant to the problem.
+
+2. **Feature Extraction**:
+   - **Text Data**: Techniques like TF-IDF and word embeddings (e.g., Word2Vec, GloVe) to convert text into numerical features.
+   - **Image Data**: Using convolutional neural networks (CNNs) to extract features from images.
+
+### Why Use These Techniques?
+
+- **Improved Model Performance**: Reducing irrelevant or redundant features can lead to better model accuracy and generalization.
+- **Reduced Overfitting**: Simplifying the model by reducing features can help prevent overfitting.
+- **Faster Computation**: Fewer features mean less computational complexity and faster training times.
+- **Better Interpretability**: Models with fewer features are easier to understand and interpret.
+
+Would you like to dive deeper into any specific technique or see some examples in Python?
+
+Source: Conversation with Copilot, 9/16/2024
+(1) Feature Selection Techniques in Machine Learning. https://www.geeksforgeeks.org/feature-selection-techniques-in-machine-learning/.
+(2) How to Choose a Feature Selection Method For Machine Learning. https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/.
+(3) What is Feature Engineering? - GeeksforGeeks. https://www.geeksforgeeks.org/what-is-feature-engineering/.
+(4) Feature reduction Definition - DeepAI. https://deepai.org/machine-learning-glossary-and-terms/feature-reduction.
