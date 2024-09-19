@@ -1,0 +1,53 @@
+LogisticRegression & KNeighborsClassifier:
+
+### LogisticRegression
+- **Purpose**: Used for binary classification problems (e.g., predicting if an email is spam or not).
+- **How it works**: It models the probability that a given input belongs to a particular class. It uses a logistic function to squeeze the output between 0 and 1.
+- **Key Parameters**:
+  - `C`: Inverse of regularization strength. Smaller values specify stronger regularization.
+  - `solver`: Algorithm to use in the optimization problem (e.g., 'liblinear', 'saga').
+  - `max_iter`: Maximum number of iterations for the solver to converge.
+
+**Example**:
+```python
+from sklearn.linear_model import LogisticRegression
+
+# Create a logistic regression model
+model = LogisticRegression(C=1.0, solver='liblinear', max_iter=100)
+
+# Fit the model to the data
+model.fit(X_train, y_train)
+
+# Predict the labels
+predictions = model.predict(X_test)
+```
+
+### KNeighborsClassifier
+- **Purpose**: Used for classification problems by finding the 'k' nearest data points in the training set.
+- **How it works**: It classifies a data point based on how its neighbors are classified. The majority vote of its neighbors determines the class.
+- **Key Parameters**:
+  - `n_neighbors`: Number of neighbors to use.
+  - `weights`: Weight function used in prediction (e.g., 'uniform', 'distance').
+  - `algorithm`: Algorithm used to compute the nearest neighbors (e.g., 'auto', 'ball_tree').
+
+**Example**:
+```python
+from sklearn.neighbors import KNeighborsClassifier
+
+# Create a KNN classifier
+knn = KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='auto')
+
+# Fit the model to the data
+knn.fit(X_train, y_train)
+
+# Predict the labels
+predictions = knn.predict(X_test)
+```
+
+Both of these models are part of the `scikit-learn` library and are commonly used for different types of classification tasks. If you have any specific questions or need further clarification, feel free to ask!
+
+Source: Conversation with Copilot, 9/19/2024
+(1) K Nearest Neighbors in Python - A Step-by-Step Guide. https://www.nickmccullum.com/python-machine-learning/k-nearest-neighbors-python/.
+(2) KNeighborsClassifier — scikit-learn 1.5.2 documentation. https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html.
+(3) Harvard CS109A | S-Section 05: Logistic Regression, Multiple Logistic .... https://harvard-iacs.github.io/2020-CS109A/sections/sec_5/.
+(4) K-nearest Neighbors (KNN) Classification Model. https://www.ritchieng.com/machine-learning-k-nearest-neighbors-knn/.

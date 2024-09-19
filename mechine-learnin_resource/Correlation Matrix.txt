@@ -1,0 +1,33 @@
+Correlation Matrix
+
+A correlation matrix is a table that shows the relationship between multiple variables. Each cell in the table contains a correlation coefficient, which measures how strongly two variables are related.
+
+### Understanding Correlation Coefficients
+
+- **Correlation Coefficient**: This is a number between -1 and 1.
+  - **1** means a perfect positive relationship (as one variable increases, the other also increases).
+  - **-1** means a perfect negative relationship (as one variable increases, the other decreases).
+  - **0** means no relationship (the variables do not affect each other).
+
+### Example
+
+Imagine you have three variables: **hours studied**, **exam score**, and **hours slept**. A correlation matrix for these variables might look like this:
+
+|               | Hours Studied | Exam Score | Hours Slept |
+|---------------|---------------|------------|-------------|
+| **Hours Studied** | 1             | 0.82       | -0.22       |
+| **Exam Score**    | 0.82          | 1          | 0.06        |
+| **Hours Slept**   | -0.22         | 0.06       | 1           |
+
+### How to Read It
+
+- The diagonal values (1s) show that each variable is perfectly correlated with itself.
+- The value **0.82** between "Hours Studied" and "Exam Score" means they have a strong positive relationship.
+- The value **-0.22** between "Hours Studied" and "Hours Slept" means they have a weak negative relationship.
+- The value **0.06** between "Exam Score" and "Hours Slept" means they have almost no relationship.
+
+### Why Use a Correlation Matrix?
+
+1. **Identify Relationships**: It helps you see which variables are related.
+2. **Data Summarization**: It provides a quick summary of relationships in your data.
+3. **Feature Selection**: In machine learning, it helps in selecting features that are strongly related to the target variable.
