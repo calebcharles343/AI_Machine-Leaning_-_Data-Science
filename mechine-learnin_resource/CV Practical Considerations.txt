@@ -1,0 +1,4 @@
+CV Practical Considerations
+
+Dataset Size: For smaller datasets, 10-fold cross-validation is generally preferred as it provides a more reliable estimate of model performance. For larger datasets, 5-fold cross-validation can be a good balance between computational efficiency and performance estimation.
+Computational Resources: If you have limited computational resources or time constraints, 5-fold cross-validation might be more practical.
